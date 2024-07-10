@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.StoreGoodsActivity">
+
+    <include layout="@layout/mytoolbar"/>
+
+    <RelativeLayout
+        android:background="#B13628"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_storeName_act"
+            android:layout_marginTop="20dp"
+            android:text="我是店家名称"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_below="@+id/tv_storeName_act"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/tv_store_score_act"
+                android:textStyle="bold"
+                android:textColor="#FF2256"
+                android:gravity="center"
+                android:text="5.0分"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_store_sell_act"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="月售457"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/ll"
+            android:id="@+id/tv_store_sign_act"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/store_intro_shape"
+            android:textColor="#B83F3F"
+            android:textStyle="bold"
+            android:text="棒棒哒，又快又好吃"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_store_act"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="80dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/home_newsTab"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorColor="@color/card_bg_red"
+        app:tabSelectedTextColor="@color/card_bg_red"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/home_news_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>

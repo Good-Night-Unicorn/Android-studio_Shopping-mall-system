@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PayActivity">
+
+    <include layout="@layout/mytoolbar"/>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/color666"
+        android:textSize="25dp"
+        android:text="请核对商品信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pay"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_pay_total"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/tv_submitOrder"
+            android:textSize="30dp"
+            android:text="￥45.26"
+            android:textColor="#E30732"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:id="@+id/tv_submitOrder"
+            android:text="提交订单"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/textview_shape"
+            android:textSize="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

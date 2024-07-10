@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/single_1"
+            android:icon="@mipmap/plan"
+            android:title="订单列表" />
+        <item
+            android:id="@+id/single_2"
+            android:icon="@mipmap/my_money"
+            android:title="我的钱包" />
+        <item
+            android:id="@+id/single_3"
+            android:icon="@mipmap/person_center"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/single_4"
+            android:icon="@mipmap/exit"
+            android:title="退出账号" />
+    </group>
+
+</menu>

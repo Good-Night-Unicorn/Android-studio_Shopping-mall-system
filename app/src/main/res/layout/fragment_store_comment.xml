@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:background="#c2c2c2"
+    android:padding="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#0000"
+            android:dividerHeight="8dp"
+            android:scrollbars="none" >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_chat_message"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center|left"
+            android:background="@color/white"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btn_message_send"
+            android:text="发送"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="64dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="4dp" />
+    </LinearLayout>
+
+</RelativeLayout>

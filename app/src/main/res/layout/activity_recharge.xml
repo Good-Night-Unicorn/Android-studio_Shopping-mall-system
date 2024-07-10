@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RechargeActivity">
+
+    <include layout="@layout/mytoolbar"/>
+
+    <EditText
+        android:id="@+id/et_rechargeMoney"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:background="@drawable/recharge_et_shape"
+        />
+
+    <Button
+        android:id="@+id/btn_doRecharge"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="充值"
+        android:layout_below="@+id/et_rechargeMoney"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#BB2BD12E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</RelativeLayout>

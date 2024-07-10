@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyAccountActivity">
+
+    <include layout="@layout/mytoolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/re_userName"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:text="用户名"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_username_acc"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/re_money"
+        android:layout_below="@+id/re_userName"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:text="余额"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/re_phoneNumb"
+        android:layout_below="@+id/re_money"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:text="手机号"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_phoneNumb_acc"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/re_schoolName"
+        android:layout_below="@+id/re_phoneNumb"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="学校名称"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_schoolName_acc"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:textColor="@color/black"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/re_apartmentNumb"
+        android:layout_below="@+id/re_schoolName"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="公寓楼号"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_apartmentNumb_acc"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/re_personal_pic"
+        android:layout_below="@+id/re_apartmentNumb"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="头像"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_personal_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shoppingmallsystem">
+
+    <application
+        android:name=".util.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.OrderDetailsActivity"></activity>
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.PayActivity" />
+        <activity android:name=".activity.PersonalCenterActivity" />
+        <activity android:name=".activity.RechargeActivity" />
+        <activity android:name=".activity.MyAccountActivity" />
+        <activity android:name=".activity.StoreGoodsActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.HomeAllStoresActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

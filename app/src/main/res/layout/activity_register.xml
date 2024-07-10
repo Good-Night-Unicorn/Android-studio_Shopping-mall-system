@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <include layout="@layout/mytoolbar"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_userName"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户名"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_below="@+id/ll_userName"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="密    码"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_nickName"
+        android:layout_below="@+id/ll_password"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="昵    称"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_nickName"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_phoneNumb"
+        android:layout_below="@+id/ll_nickName"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_phoneNumb"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_schoolName"
+        android:layout_below="@+id/ll_phoneNumb"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="学校名称"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_schoolName"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_apartmentNumb"
+        android:layout_below="@+id/ll_schoolName"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="公寓楼号"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_apartmentNumb"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_cancle"
+        android:width="160dp"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:width="160dp"
+        android:text="取消" />
+
+</RelativeLayout>

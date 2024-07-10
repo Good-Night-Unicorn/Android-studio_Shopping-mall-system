@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#ddd"
+        />
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            />
+
+
+        <include layout="@layout/view_stick_head"/>
+    </FrameLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_shoppingCar"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7"
+        >
+
+        <ImageView
+            android:id="@+id/iv_shoppingCar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shoppingcar_null_64"
+            />
+
+        <TextView
+            android:id="@+id/tv_shoppingCar"
+            android:textSize="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="暂无商品"
+            android:background="@drawable/textview_shape"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_total_frag"
+            android:text="￥50"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_shoppingCar"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

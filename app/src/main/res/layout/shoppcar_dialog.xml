@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80333333">
+    <!--半透明遮罩-->
+    <View
+        android:id="@+id/v_dimiss"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00000000"/>
+    <!--商品菜单-->
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/v_anim"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_goods"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="已选商品"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_car_clean"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="清空"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_toLeftOf="@+id/tv_car_clean"
+                android:layout_centerVertical="true"
+                android:background="@drawable/car_clean"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/re_shoppingGoods"
+            android:layout_below="@+id/rl_goods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </RelativeLayout>
+    <!--底部栏-->
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7"
+        >
+
+        <ImageView
+            android:id="@+id/iv_shoppingCar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shoppingcar_null_64"
+            />
+
+        <TextView
+            android:id="@+id/tv_DoShopping"
+            android:textSize="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="暂无商品"
+            android:background="@drawable/textview_shape"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_total_dialog"
+            android:text="￥50"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_shoppingCar"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>
